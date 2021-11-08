@@ -8,4 +8,20 @@ Next Steps (Sunday, 11/3):
 - [x] Create routers in routes/posts.js
 - [x] Import postRoutes, etc in server.js
 - [x] Check for database on compass
-- Check CRUD on postman
+- [x] Check CRUD on postman
+
+Monday Tasks: 
+
+- Basic components (Footer, layout, nav)
+
+- Screens
+  Anelise - Home & Posts
+  Clint - Post Create
+  Tyrus - Post Detail
+  Jackie - Post Edit
+
+- Components
+  Anelise - Post Cards
+  Clint - Footer & Pain
+  Tyrus - Layout & Post Card
+  Jackie - Nav & Post
