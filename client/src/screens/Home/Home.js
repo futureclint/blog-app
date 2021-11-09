@@ -20,7 +20,7 @@ const Posts = () => {
   return (
     <Layout>
       <div className='posts'>
-        {searchResult.map((post, index) => {
+        {Posts.map((post, index) => {
           return (
             <Post
               _id={post._id}
