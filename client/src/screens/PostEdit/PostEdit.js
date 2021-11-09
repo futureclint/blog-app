@@ -38,7 +38,7 @@ const PostEdit = (props) => {
   }
 
   if (isUpdated) {
-    return <Navigate to={`/posts/${id}`} />
+    return <Redirect to={`/posts/${id}`} />
   }
 
   return (

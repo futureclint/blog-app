@@ -1,22 +1,32 @@
 import React from 'react';
 import './App.css';
-import Home from './screens/Home/Home';
+// import Home from './screens/Home/Home';
 import Posts from './screens/Posts/Posts';
 import PostCreate from './screens/PostCreate/PostCreate';
 import PostEdit from './screens/PostEdit/PostEdit';
 import PostDetail from './screens/PostDetail/PostDetail';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 
 const App = () => {
   return (
     <div className="app">
-      <Routes>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/posts" component={Posts} />
-        <Route path="/add-post" component={PostCreate} />
-        <Route exact path="/posts/:id/edit" component={PostEdit} />
-        <Route exact path="/posts/:id" component={PostDetail} />
-      </Routes>
+      <Switch>
+        <Route path="/posts/:id">
+          <PostDetail/>
+        </Route>
+        
+        <Route path="/posts/:id/edit">
+          <PostEdit/>
+        </Route>
+        
+        <Route path="/add-post">
+          <PostCreate/>
+        </Route>
+        
+        <Route path="/" >
+          <Posts/>
+        </Route>
+      </Switch>
     </div>
   )
 }
