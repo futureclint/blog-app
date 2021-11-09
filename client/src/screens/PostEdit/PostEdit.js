@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useParams, Redirect } from 'react-router-dom';
+import { useParams, Navigate } from 'react-router-dom';
 import Layout from '../../components/Layout/Layout';
 import './PostEdit.css';
 import { getPost, updatePost } from '../../services/posts';
@@ -14,7 +14,7 @@ const PostEdit = (props) => {
 
   const [isUpdated, setUpdated] = useState(false)
   let { id } = useParams()
-  
+
   useEffect(() => {
     const fetchPost = async () => {
       const post = await getPost(id)
@@ -37,9 +37,9 @@ const PostEdit = (props) => {
     setUpdated(updated)
   }
 
-  // if (isUpdated) {
-  //   return <Redirect to={`/posts/${id}`} />
-  // }
+  if (isUpdated) {
+    return <Navigate to={`/posts/${id}`} />
+  }
 
   return (
     < Layout >
@@ -60,7 +60,7 @@ const PostEdit = (props) => {
             />
         </form>
       </div>
-      
+
       <form className='edit-form' onSubmit={handleSubmit}>
         <input
           className='input-title'
