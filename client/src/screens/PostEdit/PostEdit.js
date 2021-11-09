@@ -37,9 +37,9 @@ const PostEdit = (props) => {
     setUpdated(updated)
   }
 
-  // if (isUpdated) {
-  //   return <Redirect to={`/posts/${id}`} />
-  // }
+  if (isUpdated) {
+    return <Redirect to={`/posts/${id}`} />
+  }
 
   return (
     < Layout >
