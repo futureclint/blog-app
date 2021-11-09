@@ -12,12 +12,12 @@
 
 Screens:
 - [ ] Anelise - Home & Posts
-- [ ] Clint - Post Create
+- [x] Clint - Post Create
 - [ ] Tyrus - Post Detail
 - [ ] Jackie - Post Edit
 
 Components:
 - [ ] Anelise - Post Cards
-- [ ] Clint - Footer & Git/GitHub
+- [x] Clint - Footer & Git/GitHub
 - [ ] Tyrus - Layout & Post Card
 - [ ] Jackie - Nav & Post
