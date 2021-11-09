@@ -11,13 +11,13 @@
 ---
 
 Screens:
-- [ ] Anelise - Home & Posts
+- [x] Anelise - Home & Posts
 - [x] Clint - Post Create
-- [ ] Tyrus - Post Detail
-- [ ] Jackie - Post Edit
+- [x] Tyrus - Post Detail
+- [x] Jackie - Post Edit
 
 Components:
-- [ ] Anelise - Post Cards
+- [x] Anelise - Post Cards
 - [x] Clint - Footer & Git/GitHub
-- [ ] Tyrus - Layout & Post Card
-- [ ] Jackie - Nav & Post
+- [x] Tyrus - Layout & Post Card
+- [x] Jackie - Nav & Post
