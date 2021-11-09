@@ -23,15 +23,23 @@ const PostEdit = (props) => {
     fetchPost()
   }, [id])
 
+  const handleChange = (ev) => {
+    const { title, value } = ev.target.value
+    setPost({
+      ...post,
+      [title]: value,
+    })
+  }
+
   const handleSubmit = async (ev) => {
     ev.preventDefault()
-    const updated = await updateProduct(id, post)
+    const updated = await updatePost(id, post)
     setUpdated(updated)
   }
 
-  if (isUpdated) {
-    return <Redirect to={`/posts/${id}`} />
-  }
+  // if (isUpdated) {
+  //   return <Redirect to={`/posts/${id}`} />
+  // }
 
   return (
     < Layout >
@@ -40,7 +48,7 @@ const PostEdit = (props) => {
           <img
             className='edit-post-image'
             src={post.imgURL}
-            alt={post.name}
+            alt={post.title}
           />
           <form onSubmit={handleSubmit}>
             <input
