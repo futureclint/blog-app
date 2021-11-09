@@ -1,4 +1,6 @@
 import './Home.css';
+import Post from '../../components/Post/Post'
+
 
 import Layout from '../../components/Layout/Layout.js';
 import { getPosts } from '../../services/posts.js';
